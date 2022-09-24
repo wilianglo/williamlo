@@ -6,6 +6,7 @@
     <title>My Profile | William Lokita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- End My CSS -->
@@ -42,7 +43,8 @@
     <!-- Akhir Nav Bar -->
     <!-- Jumbotron -->
     <section class="jumbotron text-center">
-      <img src="img/pasfotoup2022.jpg" alt="mypic" width="200px" class="rounded-circle img-thumbnail" />
+      <img src="img/pasfotoup2022.jpg" alt="mypic" width="200px" class="rounded-circle img-thumbnail" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="250"
+      data-aos-duration="2000"/>
       <h1 class="display-4">William Lokita</h1>
       <p class="lead"><h3>IT Supervisor</h3> <span class="badge rounded-pill bg-primary">March 2003 - July 2022</span></p>
       <p class="lead"><b>Responsibilites :</b></p>
@@ -51,7 +53,8 @@
         </p>-->
       <div class="row justify-content-center fs-6 text-start">
         <div class="col-md-6">
-          <ol class="list-group list-group-numbered">
+          <ol class="list-group list-group-numbered"  data-aos="fade-up" data-aos-offset="200" data-aos-delay="250"
+          data-aos-duration="2000">
             <li class="list-group-item list-group-item-action">Analyzing existing computer systems and making recommendations for upgrades and improvements.</li>
             <li class="list-group-item list-group-item-action">Developing and overseeing the installation of systems, which include software and hardware.</li>
             <li class="list-group-item list-group-item-action">Performing tests and troubleshooting, as well as quality assurance.</li>
@@ -82,7 +85,7 @@
         </div>
         <div class="row justify-content-center fs-5">
           <div class="col-md-4">
-            <ul class="list-group">
+            <ul class="list-group" data-aos="fade-right" data-aos-duration="2000">
               <li class="list-group-item active">Name : William Lokita</li>
               <li class="list-group-item list-group-item-action">Age : 41 Years</li>
               <li class="list-group-item list-group-item-action">Nationality : Indonesia</li>
@@ -91,7 +94,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <ul class="list-group">
+            <ul class="list-group" data-aos="fade-left" data-aos-delay="300"  data-aos-duration="2000">
               <li class="list-group-item list-group-item-action active">Email : Will.D.Joyboy@gmail.com</li>
               <li class="list-group-item list-group-item-action">Work Exp : > 5 Years</li>
               <li class="list-group-item list-group-item-action">Position : IT Supervisor</li>
@@ -121,7 +124,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="fade-up-right" data-aos-offset="200" data-aos-duration="2000">
               <img src="img/binus university.jpeg" class="card-img-top" alt="Project1" width="200" height="200" />
               <div class="card-body">
                 <p class="card-text">
@@ -132,8 +135,8 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/sutomo1.jpg" class="card-img-top" alt="Project2" width="200" height="200" />
+            <div class="card"  data-aos="fade-up-left" data-aos-delay="300" data-aos-offset="200" data-aos-duration="2000">
+              <img src="img/sutomo1.jpg" class="card-img-top" alt="Project2" width="200" height="200"/>
               <div class="card-body">
                 <p class="card-text">
                   SUTOMO 1 MEDAN High School (SMU)
@@ -157,7 +160,7 @@
     <section id="skill">
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-md-6">
+          <div class="col-md-6" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="2000">
             <h2>My Skill or Knowledge</h2>
             <ol class="list-group">
               <li class="list-group-item list-group-item-action">MS SQL SERVER</li>
@@ -243,6 +246,10 @@
 
     <!-- Akhir Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbyEc_qxBmY5X5-tr1ITqZClW10KqvxSMG3PFSI8VcUsM60OLV1cwenZ0mqMScZItnm_/exec";
       const form = document.forms["submit-to-google-sheet"];
